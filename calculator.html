@@ -1,0 +1,35 @@
+<html>
+<head><title>calculator</title>
+</head>
+<body>
+<form>
+<table width="50%">
+<tr>
+<td><input type=text id="demo" value="Input One"></td>
+<td><input type=text id="demo1" value="Input Two"></td>
+<td><button type="button" onclick="myfunction()">Get Result</button></td>
+</tr>
+</table>
+</form>
+<br>
+<table>
+<tr><td>multiplication result:</td><td><input type=text id="mul"></td></tr>
+<tr><td>addition result:</td><td><input type=text id="add"></td></tr>
+<tr><td>square result:</td><td><input type=text id="square""></td></tr>
+</table>
+<script>
+function myfunction()
+{
+var x = document.getElementById("demo").value;
+var y = document.getElementById("demo1").value;
+var z = x * y;
+var a = parseInt(x) + parseInt(y);
+var b = x * x;
+document.getElementById("mul").value= z;
+document.getElementById("add").value= a ;
+document.getElementById("square").value = b;
+
+}
+</script>
+</body>
+</html>
